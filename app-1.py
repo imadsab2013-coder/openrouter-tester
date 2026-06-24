@@ -160,13 +160,13 @@ hr { border-color: #1e3050 !important; }
 # ─── Models ──────────────────────────────────────────────────
 MODELS = {
     # ── مجاني تماماً ──
-    "meta-llama/llama-3.1-8b-instruct:free":       "🆓 Llama 3.1 8B — مجاني",
-    "meta-llama/llama-3.2-3b-instruct:free":        "🆓 Llama 3.2 3B — مجاني",
-    "meta-llama/llama-3.2-1b-instruct:free":        "🆓 Llama 3.2 1B — مجاني",
-    "mistralai/mistral-7b-instruct:free":           "🆓 Mistral 7B — مجاني",
-    "google/gemma-2-9b-it:free":                    "🆓 Gemma 2 9B — مجاني",
-    "deepseek/deepseek-r1-distill-llama-8b:free":   "🆓 DeepSeek R1 Distill 8B — مجاني",
-    "qwen/qwen-2.5-7b-instruct:free":               "🆓 Qwen 2.5 7B — مجاني",
+    "meta-llama/llama-3.1-8b-instruct":            "🆓 Llama 3.1 8B — مجاني",
+    "meta-llama/llama-3.2-3b-instruct":             "🆓 Llama 3.2 3B — مجاني",
+    "mistralai/mistral-7b-instruct":                "🆓 Mistral 7B — مجاني",
+    "google/gemma-2-9b-it":                         "🆓 Gemma 2 9B — مجاني",
+    "deepseek/deepseek-r1-distill-llama-8b":        "🆓 DeepSeek R1 Distill 8B — مجاني",
+    "qwen/qwen-2.5-7b-instruct":                    "🆓 Qwen 2.5 7B — مجاني",
+    "microsoft/phi-3-mini-128k-instruct":           "🆓 Phi-3 Mini — مجاني",
     # ── DeepSeek مدفوع ──
     "deepseek/deepseek-chat-v3-0324":              "💰 DeepSeek Chat V3 (Latest)",
     "deepseek/deepseek-r1":                        "💰 DeepSeek R1 — Reasoning",
