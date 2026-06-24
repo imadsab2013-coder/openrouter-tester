@@ -157,18 +157,24 @@ hr { border-color: #1e3050 !important; }
 </style>
 """, unsafe_allow_html=True)
 
-# ─── DeepSeek Models ─────────────────────────────────────────
-DEEPSEEK_MODELS = {
-    "deepseek/deepseek-chat-v3-0324": "DeepSeek Chat V3 (0324) — Latest",
-    "deepseek/deepseek-r1": "DeepSeek R1 — Reasoning",
-    "deepseek/deepseek-r1-zero": "DeepSeek R1 Zero",
-    "deepseek/deepseek-r1-distill-llama-70b": "R1 Distill — Llama 70B",
-    "deepseek/deepseek-r1-distill-llama-8b": "R1 Distill — Llama 8B",
-    "deepseek/deepseek-r1-distill-qwen-32b": "R1 Distill — Qwen 32B",
-    "deepseek/deepseek-r1-distill-qwen-14b": "R1 Distill — Qwen 14B",
-    "deepseek/deepseek-r1-distill-qwen-7b": "R1 Distill — Qwen 7B",
-    "deepseek/deepseek-r1-distill-qwen-1.5b": "R1 Distill — Qwen 1.5B",
-    "deepseek/deepseek-prover-v2": "DeepSeek Prover V2",
+# ─── Models ──────────────────────────────────────────────────
+MODELS = {
+    # ── مجاني تماماً ──
+    "meta-llama/llama-3.1-8b-instruct:free":       "🆓 Llama 3.1 8B — مجاني",
+    "meta-llama/llama-3.2-3b-instruct:free":        "🆓 Llama 3.2 3B — مجاني",
+    "meta-llama/llama-3.2-1b-instruct:free":        "🆓 Llama 3.2 1B — مجاني",
+    "mistralai/mistral-7b-instruct:free":           "🆓 Mistral 7B — مجاني",
+    "google/gemma-2-9b-it:free":                    "🆓 Gemma 2 9B — مجاني",
+    "deepseek/deepseek-r1-distill-llama-8b:free":   "🆓 DeepSeek R1 Distill 8B — مجاني",
+    "qwen/qwen-2.5-7b-instruct:free":               "🆓 Qwen 2.5 7B — مجاني",
+    # ── DeepSeek مدفوع ──
+    "deepseek/deepseek-chat-v3-0324":              "💰 DeepSeek Chat V3 (Latest)",
+    "deepseek/deepseek-r1":                        "💰 DeepSeek R1 — Reasoning",
+    "deepseek/deepseek-r1-distill-llama-70b":      "💰 R1 Distill — Llama 70B",
+    "deepseek/deepseek-r1-distill-qwen-32b":       "💰 R1 Distill — Qwen 32B",
+    "deepseek/deepseek-r1-distill-qwen-14b":       "💰 R1 Distill — Qwen 14B",
+    "deepseek/deepseek-r1-distill-qwen-7b":        "💰 R1 Distill — Qwen 7B",
+    "deepseek/deepseek-prover-v2":                 "💰 DeepSeek Prover V2",
 }
 
 # ─── Session State ───────────────────────────────────────────
@@ -296,8 +302,8 @@ elif st.session_state.api_status == "fail":
 st.markdown("---")
 selected_model_key = st.selectbox(
     "اختار الموديل",
-    options=list(DEEPSEEK_MODELS.keys()),
-    format_func=lambda x: DEEPSEEK_MODELS[x],
+    options=list(MODELS.keys()),
+    format_func=lambda x: MODELS[x],
     index=0
 )
 
